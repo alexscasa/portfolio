@@ -12,8 +12,8 @@ export const PROJECTS = [
 ];
 
 export const PROJECT_URLS = [
-    '/projects/pirates/index.html',
-    '/projects/chess/index.html'
+    'https://alexscasa.github.io/pirates/',
+    'https://alexscasa.github.io/chess/'
 ];
 
 export const PROJECT_NOTES = [
