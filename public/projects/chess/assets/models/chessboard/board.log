@@ -1,0 +1,31 @@
+Exporter version: 5.5.0, Blender version: 2.79 (sub 0)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used:
+		selected layers only:  false
+		flat shading entire scene:  false
+		inline textures:  false
+		texture directory:  C:\Users\Tyler\Downloads\Alex\Assets\Chess\chessboard\
+	Python World class constructor completed
+	processing begun of mesh:  Cube
+		processing begun of Standard material:  Board Surface
+			Diffuse texture found "Board Surface"
+				Image texture found, type:  diffuseTexture, mapped using: "UVMap"
+	WARNING: Error encountered processing image file:  , Error:  'C:\\Users\\Tyler\\Downloads\\Alex\\Assets\\Chess\\chessboard\\grid.png' and 'C:\\Users\\Tyler\\Downloads\\Alex\\Assets\\Chess\\chessboard\\grid.png' are the same file
+		processing begun of Standard material:  Wood Frame
+			Diffuse texture found "Wood Frame"
+				Image texture found, type:  diffuseTexture, mapped using: "UVMap"
+	WARNING: Error encountered processing image file:  , Error:  'C:\\Users\\Tyler\\Downloads\\Alex\\Assets\\Chess\\chessboard\\darkwood1_0.jpg' and 'C:\\Users\\Tyler\\Downloads\\Alex\\Assets\\Chess\\chessboard\\darkwood1_0.jpg' are the same file
+		processing begun of multimaterial:  board.Multimaterial#0
+		num positions      :  97
+		num normals        :  97
+		num uvs            :  194
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  156
+	processing begun of camera (UniversalCamera):  Camera
+	processing begun of light (POINT):  Point
+	processing begun of light (POINT):  Lamp
+========= Writing of scene file started =========
+========= Writing of scene file completed =========
+========= end of processing =========
+elapsed time:  0 min, 0.015 secs
