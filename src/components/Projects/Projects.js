@@ -5,7 +5,7 @@ import { ButtonGroup, Button } from 'react-bootstrap';
 
 import OtherProjects from '../OtherProjects/OtherProjects';
 
-import { PROJECTS, PROJECT_URLS, PROJECT_NOTES, PROJECT_THANKS } from '../constants/index';
+import { PROJECTS, PROJECT_URLS, PROJECT_GITHUB, PROJECT_NOTES, PROJECT_THANKS } from '../constants/index';
 
 import './Projects.css';
 
@@ -13,7 +13,7 @@ class Projects extends Component {
     
     activeProject(test, clicked) {
         if (test === clicked) {
-            window.history.pushState(this.props.projects, '', '/Portfolio/' + test);
+            window.history.pushState(this.props.projects, '', '/portfolio/projects/' + test);
             return true;
         } else return false;
     }
@@ -50,12 +50,29 @@ class Projects extends Component {
                     <p>
                         { PROJECT_NOTES[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])] }
                     <br />
-                        { PROJECT_THANKS[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])] }
+                    Special thanks for the following assets! <br />
+                        <ul>
+                            { 
+                                PROJECT_THANKS[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])]
+                                    .map((thank, i) => {
+                                        let temp = thank.split(',');
+                                        return(
+                                            <li>
+                                                <a href={temp[1]}>{temp[0]}</a>
+                                            </li>
+                                    )})
+                            }
+                        </ul>
                     </p>
-                
-                    <Button href={PROJECT_URLS[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])]}> 
-                        Full Screen
-                    </Button>
+                    
+                    <ButtonGroup>
+                        <Button href={PROJECT_GITHUB[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])]}>
+                            GitHub
+                        </Button>
+                        <Button href={PROJECT_URLS[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])]}> 
+                            Full Screen
+                        </Button>
+                    </ButtonGroup>
                 </div>
                 }
                 { this.props.projects[this.props.projects.length - 1] === 'Other Projects' && <OtherProjects /> }

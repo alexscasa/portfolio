@@ -22,8 +22,21 @@ export const PROJECT_NOTES = [
 ];
 
 export const PROJECT_THANKS = [
-    'Special thanks to: _____ for the sprites and _____ for the music!',
-    'Special thanks to: _____ for the models and ______ for the textures!'
+    [
+        'Pirate ship by Bleed,http://remusprites.carbonmade.com/',
+        'Cannonball by Dionelou,http://DontMind8.blogspot.com',
+        'Music by Matthew Pablo,http://www.matthewpablo.com'
+    ],
+    [
+        'Chess Pieces by Clint Bellanger,https://opengameart.org/content/chess-pieces-0',
+        'Chess Board by Pennomi (except for one texture *see below*),https://opengameart.org/content/chess-board',
+        'Chess Board\'s White Square texture by Tiziana,https://opengameart.org/node/6988'
+    ]
+];
+
+export const PROJECT_GITHUB = [
+    'https://github.com/alexscasa/pirates',
+    'https://github.com/alexscasa/chess'
 ];
 
 

@@ -47,7 +47,7 @@ class Contact extends Component {
            placeholder="Company: Job Opportunity"
            />
            
-           <input type="hidden" name="_next" value='/thanks.html' />
+           <input type="hidden" name="_next" value='assets/pages/thanks.html' />
            
           <FormGroup controlId="message">
             <Col componentClass={ControlLabel} sm={2}>
