@@ -42,7 +42,7 @@ class AboutMe extends Component {
                                             <Panel.Body>
                                                 I've always had a passion for music.  I have been listening to vinyl since I was a child, with my preference leaning towards Blues and Jazz but an avid lover of almost all music.
                                                 I have been playing guitar mediocrely since high school and its a hobby I continue to this day.  I enjoy playing fingerstyle guitar with my
-                                                most notable capabilities being covers of Little Mermaid's 'Under the Sea', Ray Charles' 'Hit the Road Jack', and the Beatles 'For No One'.
+                                                most notable capabilities being covers of Little Mermaid's 'Under the Sea', Ray Charles' 'Hit the Road Jack', and the Beatles' 'For No One'.
                                             </Panel.Body>
                                         </Panel.Collapse>
                                     </Panel>
@@ -55,8 +55,8 @@ class AboutMe extends Component {
                                         <Panel.Collapse>
                                             <Panel.Body>
                                                 This is a new hobby of mine, and I have yet to get to the point where I can make my own models.  
-                                                However, I hope to build a 3D scanner soon which will alleviate my reliance on others publishing free models for me to use.
-                                                The video below is of me printing a small Xun, which is a Chinese ocarina. I still have not learned to play it. <br />
+                                                However, I hope to build a 3D scanner soon which will alleviate some of my reliance on others publishing free models for me to use.
+                                                The video below is of me printing a small Chinese aerophone, similar to an ocarina, called a Xun.<br /> I still have not learned to play it. <br />
                                                 <video controls muted>
                                                     <source src="assets/videos/3DPrinter.mp4" type="video/mp4" />
                                                     <source src="assets/videos/3DPrinter.ogg" type="video/ogg" />
@@ -74,8 +74,8 @@ class AboutMe extends Component {
                                         <Panel.Collapse>
                                             <Panel.Body>
                                                 I have been programming since high school, starting with creating games and simple websites.  In 2009, some classmates and myself entered the Global Game Jam competition and won with our game, 
-                                                'Boxy & Foxy: Business as Usual'. This success garnered the attention of Bethesda Softworks where we were invited for a tour of their studios.  
-                                                In addition to programming, I also enjoy the mechanical side of life, often finding my weekends working on cars.
+                                                'Boxy & Foxy: Business as Usual'. This garnered the attention of Bethesda Softworks where we were invited for a tour of their studios.  
+                                                In addition to programming, I also enjoy the mechanical side of life, often finding myself working on cars during the weekend.
                                                 Because of this, I am very interested in automation and the hardware side of system development which sparked an interest in Arduino and RaspberryPi microcontrollers.
                                             </Panel.Body>
                                         </Panel.Collapse>
