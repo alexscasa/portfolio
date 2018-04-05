@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { nextPage, previousPage } from '../state/actions/index.js';
-import Navigation from '../components/Navigation';
+import Navigation from '../components/Navigation/Navigation';
 
 // connect state to component props
 const mapStateToProps = (state) => ({

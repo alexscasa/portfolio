@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 
 import { Row, Navbar, Nav, NavItem } from 'react-bootstrap';
          
-import Content from './Content.js';
+import Content from '../Content.js';
 
-import { PAGES } from './constants/index';
+import { PAGES } from '../constants/index';
 
 import './Navigation.css';
 
@@ -13,7 +13,7 @@ class Navigation extends Component {
     
     activePage(test, clicked) {
         if (test === clicked) {
-            window.history.pushState(this.props.pages, '', '/portfolio/' + test);
+            window.history.pushState(this.props.pages, '', '' + test);
             return true;
         } else return false;
     }
