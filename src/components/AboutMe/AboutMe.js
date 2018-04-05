@@ -71,8 +71,8 @@ class AboutMe extends Component {
                                                 However, I hope to build a 3D scanner soon which will alleviate my reliance on others publishing free models for me to use.
                                                 The video below is of me printing a small Xun, which is a Chinese ocarina. I still have not learned to play it. <br />
                                                 <video controls muted>
-                                                    <source src="assets/videos/3DPrinter.mp4" type="video/mp4" />
-                                                    <source src="assets/videos/3DPrinter.ogg" type="video/ogg" />
+                                                    <source src="/assets/videos/3DPrinter.mp4" type="video/mp4" />
+                                                    <source src="/assets/videos/3DPrinter.ogg" type="video/ogg" />
                                                     Your browser does not support the video tag.
                                                 </video>
                                             </Panel.Body>

@@ -6,3 +6,8 @@
     margin: auto;
     width: 75%;
 }
+
+video {
+    width: 100%;
+    height: auto;
+}
