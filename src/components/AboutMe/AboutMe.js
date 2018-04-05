@@ -46,20 +46,6 @@ class AboutMe extends Component {
                                             </Panel.Body>
                                         </Panel.Collapse>
                                     </Panel>
-                                    <Panel id="gardening" >
-                                        <Panel.Heading>
-                                            <Panel.Title toggle>
-                                                Gardening
-                                            </Panel.Title>
-                                        </Panel.Heading>
-                                        <Panel.Collapse>
-                                            <Panel.Body>
-                                                This has always been a hobby of mine, but I'm only just beginning to look into larger scale operations and incorporating computers to automate processes.
-                                                Traditonally, I have grown tomatoes and peppers seasonally (2 plants each) in my backyard using pots and soil. However, I have recently become enamored with aquaponics
-                                                and have been designing a system to build for that agriculutral method (see my smart aquaponics project below).
-                                            </Panel.Body>
-                                        </Panel.Collapse>
-                                    </Panel>
                                     <Panel id="printing" >
                                         <Panel.Heading>
                                             <Panel.Title toggle>
