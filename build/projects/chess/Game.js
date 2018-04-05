@@ -31,7 +31,7 @@ var selected_piece,
         camera.attachControl(canvas, false );
         
         // Load board
-        BABYLON.SceneLoader.ImportMesh("","./assets/models/chessboard/", "board.babylon", scene, function(meshes) {
+        BABYLON.SceneLoader.ImportMesh("","/assets/models/chessboard/", "board.babylon", scene, function(meshes) {
             chessboard = meshes[0];
             chessboard.name = 'Chessboard';
             spawnPieces('white', chessboard, scene);
@@ -109,7 +109,7 @@ var selected_piece,
         square = (size.z * 2) / 9;
     
         //  King
-        BABYLON.SceneLoader.ImportMesh("King" + color_insert,"./assets/models/pieces/", "chess.babylon", scene, function(meshes){
+        BABYLON.SceneLoader.ImportMesh("King" + color_insert,"/assets/models/pieces/", "chess.babylon", scene, function(meshes){
             var mesh = meshes[0];
         
             if('white' === color){
@@ -122,7 +122,7 @@ var selected_piece,
         });
         
         //  Queen
-        BABYLON.SceneLoader.ImportMesh("Queen" + color_insert,"./assets/models/pieces/", "chess.babylon", scene, function(meshes){
+        BABYLON.SceneLoader.ImportMesh("Queen" + color_insert,"/assets/models/pieces/", "chess.babylon", scene, function(meshes){
             var mesh = meshes[0];
             
             if('white' === color){
@@ -135,7 +135,7 @@ var selected_piece,
         });
         
         //  Rook
-        BABYLON.SceneLoader.ImportMesh("Rook" + color_insert,"./assets/models/pieces/", "chess.babylon", scene, function(meshes){
+        BABYLON.SceneLoader.ImportMesh("Rook" + color_insert,"/assets/models/pieces/", "chess.babylon", scene, function(meshes){
             var mesh = meshes[0];
             if('white' === color){
                 mesh.position = new BABYLON.Vector3(0 + (square * 3.5), 0 + size.y * 1.6, 0 - (square * 3.6));
@@ -153,7 +153,7 @@ var selected_piece,
         });
         
         //  Bishop
-        BABYLON.SceneLoader.ImportMesh("Bishop" + color_insert,"./assets/models/pieces/", "chess.babylon", scene, function(meshes){
+        BABYLON.SceneLoader.ImportMesh("Bishop" + color_insert,"/assets/models/pieces/", "chess.babylon", scene, function(meshes){
             var mesh = meshes[0];
             if('white' === color){
                 mesh.position = new BABYLON.Vector3(0 + (square * 2.5), 0 + size.y * 1.6, 0 - (square * 3.6));
@@ -171,7 +171,7 @@ var selected_piece,
         });
         
         //  Knight
-        BABYLON.SceneLoader.ImportMesh("Knight" + color_insert,"./assets/models/pieces/", "chess.babylon", scene, function(meshes){
+        BABYLON.SceneLoader.ImportMesh("Knight" + color_insert,"/assets/models/pieces/", "chess.babylon", scene, function(meshes){
             var mesh = meshes[0];
             if('white' === color){
                 mesh.position = new BABYLON.Vector3(0 + (square * 1.5), 0 + size.y * 1.6, 0 - (square * 3.6));
@@ -189,7 +189,7 @@ var selected_piece,
         }); 
         
         //  Pawn
-        BABYLON.SceneLoader.ImportMesh("Pawn" + color_insert, "./assets/models/pieces/", "chess.babylon", scene, function(meshes) {
+        BABYLON.SceneLoader.ImportMesh("Pawn" + color_insert, "/assets/models/pieces/", "chess.babylon", scene, function(meshes) {
             var mesh = meshes[0];
             
             var i = 4;

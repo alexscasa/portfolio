@@ -84,7 +84,7 @@ class AboutMe extends Component {
                                                 I have been programming since high school, starting with creating games and simple websites.  In 2009, some classmates and myself entered the Global Game Jam and won with our game, 
                                                 'Boxy & Foxy: Business as Usual'. This success garnered the attention of Bethesda Softworks where we were invited for a tour of their studios.  
                                                 In addition to programming, I also work on my cars and enjoy the mechanical side of life.
-                                                Because of this, I am very interested in automation and the moving parts being controlled by the software I typically write.  This interest is being fostered by my Arduino and RaspberryPi projects.
+                                                Because of this, I am very interested in automation and the moving parts being controlled by software I can write.
                                             </Panel.Body>
                                         </Panel.Collapse>
                                     </Panel>
