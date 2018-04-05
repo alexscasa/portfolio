@@ -23,6 +23,9 @@ class Navigation extends Component {
             <div>
                 <Row>
                     <Navbar collapseOnSelect>
+                        <Navbar.Header>
+                            <Navbar.Toggle />
+                        </Navbar.Header>
                         <Navbar.Collapse>
                         <Nav>
                             { /* iterate through available PAGES                /
