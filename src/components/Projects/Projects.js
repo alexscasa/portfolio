@@ -13,7 +13,7 @@ class Projects extends Component {
     
     activeProject(test, clicked) {
         if (test === clicked) {
-            window.history.pushState(this.props.projects, '', 'projects/' + test);
+            window.history.pushState(this.props.projects, '', '/projects/' + test);
             return true;
         } else return false;
     }

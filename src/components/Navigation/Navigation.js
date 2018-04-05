@@ -13,7 +13,7 @@ class Navigation extends Component {
     
     activePage(test, clicked) {
         if (test === clicked) {
-            window.history.pushState(this.props.pages, '', '' + test);
+            window.history.pushState(this.props.pages, '', '/' + test);
             return true;
         } else return false;
     }
