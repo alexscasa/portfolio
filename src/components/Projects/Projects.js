@@ -39,7 +39,7 @@ class Projects extends Component {
                 </ButtonGroup>
                 
                 {  this.props.projects[this.props.projects.length - 1] !== 'Other Projects' &&
-                <div>
+                <div id="project">
                     <Iframe url= { PROJECT_URLS[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])] }
                         width="100%"
                         height="500px"
