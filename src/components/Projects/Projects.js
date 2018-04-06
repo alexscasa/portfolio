@@ -47,11 +47,9 @@ class Projects extends Component {
                         className="projectFrame"
                         display="initial"
                         position="relative" />
-                    <p>
-                        { PROJECT_NOTES[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])] }
-                    <br />
-                    Special thanks for the following assets! <br />
-                    </p>
+                    <p>{ PROJECT_NOTES[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])] }</p>
+                    <p id="special">Special thanks for the following assets!</p>
+                    <div id="thanks">
                             { 
                                 PROJECT_THANKS[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])]
                                     .map((thank, i) => {
@@ -63,14 +61,17 @@ class Projects extends Component {
                                             </div>
                                     )})
                             }
-                    <ButtonGroup>
-                        <Button href={PROJECT_GITHUB[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])]} target="_blank" rel="noopener noreferrer">
-                            GitHub
-                        </Button>
-                        <Button href={PROJECT_URLS[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])]}> 
-                            Full Screen
-                        </Button>
-                    </ButtonGroup>
+                    </div>
+                    <div id="buttons">
+                        <ButtonGroup>
+                            <Button href={PROJECT_GITHUB[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])]} target="_blank" rel="noopener noreferrer">
+                                GitHub
+                            </Button>
+                            <Button href={PROJECT_URLS[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])]}> 
+                                Full Screen
+                            </Button>
+                        </ButtonGroup>
+                    </div>
                 </div>
                 }
                 { this.props.projects[this.props.projects.length - 1] === 'Other Projects' && <OtherProjects /> }
