@@ -17,7 +17,7 @@ class AboutMe extends Component {
                     <Col md={12}>
                         <h3>I hope you enjoy my collection of projects.<br />
                             Not all projects could be ran here due to hosting limitations.<br />
-                            Check out my <a href="https://github.com/alexscasa">GitHub</a> for my other projects!
+                            Check out my <a href="https://github.com/alexscasa" target="_blank" rel="noopener noreferrer">GitHub</a> for my other projects!
                         </h3>
                         <h3>Now, for a little about me that you won't find on my resume!</h3>
                     </Col>
