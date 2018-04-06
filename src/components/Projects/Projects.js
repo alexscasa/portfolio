@@ -51,18 +51,17 @@ class Projects extends Component {
                         { PROJECT_NOTES[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])] }
                     <br />
                     Special thanks for the following assets! <br />
-                        <ul>
                             { 
                                 PROJECT_THANKS[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])]
                                     .map((thank, i) => {
                                         let temp = thank.split(',');
                                         return(
-                                            <li>
+                                            <div>
                                                 <a href={temp[1]}>{temp[0]}</a>
-                                            </li>
+                                                <br />
+                                            </div>
                                     )})
                             }
-                        </ul>
                     </p>
                     
                     <ButtonGroup>
