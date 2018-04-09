@@ -53,6 +53,6 @@ export const OTHER_NOTES = [
 ];
 
 export const OTHER_THANKS = [
-    'Special thanks to: 930 Club and the 8x10 for not restricting scraping in their ToS or ceasing my operations during development and testing.',
+    'Special thanks to 930 Club and the 8x10 for not restricting scraping in their ToS or ceasing my operations during development and testing.',
     'Special thanks to Wunderground for providing their API for free, with limitations.'
 ];

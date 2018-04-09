@@ -22,7 +22,7 @@ class Navigation extends Component {
         return(
             <div>
                 <Row>
-                    <Navbar collapseOnSelect>
+                    <Navbar staticTop collapseOnSelect>
                         <Navbar.Header>
                             <Navbar.Toggle />
                         </Navbar.Header>
