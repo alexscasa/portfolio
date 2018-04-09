@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import PropTypes from 'prop-types';
 
-import { Row, Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Row, Navbar, Nav, NavItem, Image } from 'react-bootstrap';
          
 import Content from '../Content.js';
 
@@ -24,6 +24,9 @@ class Navigation extends Component {
                 <Row>
                     <Navbar staticTop collapseOnSelect>
                         <Navbar.Header>
+                            <Navbar.Brand>
+                                <Image src="assets/images/house.png" rounded />
+                            </Navbar.Brand>
                             <Navbar.Toggle />
                         </Navbar.Header>
                         <Navbar.Collapse>
