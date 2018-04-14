@@ -25,7 +25,7 @@ class Navigation extends Component {
                     <Navbar staticTop collapseOnSelect>
                         <Navbar.Header>
                             <Navbar.Brand>
-                                <Image src="assets/images/house.png" rounded />
+                                <Image src="assets/images/house.png" rounded onClick={ this.props.onClick.bind(this, 'About Me') }/>
                             </Navbar.Brand>
                             <Navbar.Toggle />
                         </Navbar.Header>

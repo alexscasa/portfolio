@@ -1,6 +1,11 @@
-@media only screen and (min-width: 768px) {
+#resume {
+    margin: auto;
+    width: 40%;
+}
+
+@media screen and (max-width: 768px) {
     #resume {
-        margin: auto;
-        width: 65%;
+        margin: 0;
+        width: 100%;
     }
 }

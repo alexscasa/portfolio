@@ -67,7 +67,7 @@ class Projects extends Component {
                             <Button href={PROJECT_GITHUB[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])]} target="_blank" rel="noopener noreferrer">
                                 GitHub
                             </Button>
-                            <Button href={PROJECT_URLS[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])]}> 
+                            <Button target="_blank" href={PROJECT_URLS[PROJECTS.indexOf(this.props.projects[this.props.projects.length - 1])]}> 
                                 Full Screen
                             </Button>
                         </ButtonGroup>
