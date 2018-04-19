@@ -32,7 +32,13 @@ class Navigation extends Component {
     // treat it as clicking a link and make that the active page
     manageHistory(e) {
         let path = document.location.pathname.substr(1);
-        this.props.onClick(path);
+        if(path.startsWith('Projects')) {
+            this.props.onClick('Portfolio');
+        } else if(path.startsWith('Portfolio')) {
+            this.props.onClick('GO_BACK');
+        } else if(path === '') {
+            this.props.onClick('About Me');
+        } else this.props.onClick(path);
     }
     
     // *!!!* Not working *!!!*
@@ -41,14 +47,12 @@ class Navigation extends Component {
     fakeRefresh(e) {
         e.preventDefault();
         let page = this.props.pages[this.props.pages.length - 1];
-        this.props.onClick("GO_BACK");
         this.props.onClick(page);
     }
     
     // add listeners
     componentDidMount() {
         window.addEventListener("popstate", this.manageHistory);
-        window.addEventListener("onbeforeunload", this.fakeRefresh);
     }
     
     render(){
