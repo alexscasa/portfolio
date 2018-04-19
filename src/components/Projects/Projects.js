@@ -13,7 +13,7 @@ class Projects extends Component {
     
     activeProject(test, clicked) {
         if (test === clicked) {
-            window.history.pushState(this.props.projects, '', '/projects/' + test.replace(/\s+/g, ''));
+            window.history.pushState(this.props.projects, '', '/Projects/' + test.replace(/\s+/g, ''));
             return true;
         } else return false;
     }

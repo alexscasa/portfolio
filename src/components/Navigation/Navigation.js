@@ -11,11 +11,44 @@ import './Navigation.css';
 
 class Navigation extends Component {
     
+    // bind this to functions
+    //  - allows functions to access props
+    constructor(props) {
+        super(props);
+        this.manageHistory = this.manageHistory.bind(this);
+        this.fakeRefresh = this.fakeRefresh.bind(this);
+    }
+    
+    // Test if a given page is the active page
     activePage(test, clicked) {
         if (test === clicked) {
+            // update url with the active page
             window.history.pushState(this.props.pages, '', '/' + test.replace(/\s+/g, ''));
             return true;
         } else return false;
+    }
+    
+    // When user navigates forward or backward in browser history
+    // treat it as clicking a link and make that the active page
+    manageHistory(e) {
+        let path = document.location.pathname.substr(1);
+        this.props.onClick(path);
+    }
+    
+    // *!!!* Not working *!!!*
+    // Prevent default refresh, which sends user to either a 404 or to the About Me page
+    // Reload component based on active page
+    fakeRefresh(e) {
+        e.preventDefault();
+        let page = this.props.pages[this.props.pages.length - 1];
+        this.props.onClick("GO_BACK");
+        this.props.onClick(page);
+    }
+    
+    // add listeners
+    componentDidMount() {
+        window.addEventListener("popstate", this.manageHistory);
+        window.addEventListener("onbeforeunload", this.fakeRefresh);
     }
     
     render(){

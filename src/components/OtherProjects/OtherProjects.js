@@ -14,7 +14,7 @@ class OtherProjects extends Component {
                 OTHER_PROJECTS
                     .map((project, i) => {
                         return(
-                            <Panel id={project} defaultExpanded>
+                            <Panel id={project} key={project} defaultExpanded>
                                 <Panel.Heading>
                                     <Panel.Title toggle>
                                         {project}
