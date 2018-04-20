@@ -16,7 +16,7 @@ class Navigation extends Component {
     constructor(props) {
         super(props);
         this.manageHistory = this.manageHistory.bind(this);
-        this.fakeRefresh = this.fakeRefresh.bind(this);
+        // this.fakeRefresh = this.fakeRefresh.bind(this);
     }
     
     // Test if a given page is the active page
@@ -32,23 +32,44 @@ class Navigation extends Component {
     // treat it as clicking a link and make that the active page
     manageHistory(e) {
         let path = document.location.pathname.substr(1);
+        
+        // console.log(path);
+        // console.log(this.props.pages);
+        
         if(path.startsWith('Projects')) {
-            this.props.onClick('Portfolio');
+            path = this.navDirection('Portfolio');
         } else if(path.startsWith('Portfolio')) {
             this.props.onClick('GO_BACK');
         } else if(path === '') {
+            path = this.navDirection('AboutMe');
+        } else path = this.navDirection(path);
+        
+        // console.log(path);
+        
+        if(path === 'AboutMe') {
             this.props.onClick('About Me');
         } else this.props.onClick(path);
+        
+        // console.log(this.props.pages);
+    }
+    
+    // Determine is user is navigating forward or backward
+    navDirection(path) {
+        if(this.props.pages.length > 2) {
+            if(path === this.props.pages[this.props.pages.length - 2]) {
+                return 'GO_BACK';
+            } else return path;
+        } else return 'About Me'
     }
     
     // *!!!* Not working *!!!*
     // Prevent default refresh, which sends user to either a 404 or to the About Me page
     // Reload component based on active page
-    fakeRefresh(e) {
-        e.preventDefault();
-        let page = this.props.pages[this.props.pages.length - 1];
-        this.props.onClick(page);
-    }
+    // fakeRefresh(e) {
+    //     e.preventDefault();
+    //     let page = this.props.pages[this.props.pages.length - 1];
+    //     this.props.onClick(page);
+    // }
     
     // add listeners
     componentDidMount() {
