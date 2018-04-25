@@ -10,7 +10,7 @@ class AboutMe extends Component {
             <Grid id="content">
                 <Row>
                     <Col md={12}>
-                        <h2>Hello and thank you for visiting my portfolio!</h2>
+                        <h2>Hello, and thank you for visiting my portfolio!</h2>
                     </Col>
                 </Row>
                 <Row>

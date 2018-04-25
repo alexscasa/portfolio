@@ -49,10 +49,16 @@ export const OTHER_PROJECTS = [
 export const OTHER_NOTES = [
     'This project was developed using PHP.  I developed this application to allow me to browse concerts at my favorite venues easily and quickly.  I soon realized the problems with web scraping, such as changing web page structure that require an updated scraper and odd encoding issues, and have since abandoned the project.  It also features responsive design with Bootstrap and AJAX queries to my PHP scripts using jQuery.',
     'This project was developed using Angular2.  The purpose of this application was to allow users to obtain current weather data based on a provided location, as well as provide users with a compairison of the same weather data available for that location from a given year.  This would, in theory, allow users to see the changes in their current weather with what has been observered throughout history.',
-    'This project was developed using ReactJS and Redux.  I developed this website to host my portfolio as well as learn React and Redux.  I used Redux for state management and navigation. Navigation with Redux was a challenge, especially because I implemented my own system using the History API. I managed to implement backward and forward navigation in majority of the site, however it doesn\'t work when navigating backwards out of the Portfolio section due to my separation of state within Redux and use of I-frames in the component. I also used the front-end libraries Material and Bootstrap to provide a repsonsive and minimalist design.  Hosting is provided through Github Pages and integrated with Travis CI for CI/CD through GitHub. Some improvements for this website would be using react-router to provide a more functional navigation experience and addressing accessibility/usability concerns.'
+    'This project was developed using ReactJS and Redux.  I developed this website to host my portfolio as well as learn React and Redux.  I used Redux for state management and navigation. Navigation with Redux has proven to be a challenge.  Using React-Router would be an easy solution, however I want to implement a custom solution using just Redux and the History API. I also used the front-end libraries Material and Bootstrap to provide a repsonsive and minimalist design.  Hosting is provided through Github Pages and integrated with Travis CI for CI/CD through GitHub. Browser navigation is the only important feature left to implement, but there are quality of life improvements that could be performed.  Currently the Redux state management needs refactoring as well as the Redux component structure.  There are also concerns of accessibility with React and some issues with third-party libraries (specifically react-pdf) and my desire for a resposive design.'
 ];
 
 export const OTHER_THANKS = [
-    'Special thanks to 930 Club and the 8x10 for not restricting scraping in their ToS or ceasing my operations during development and testing.',
+    'Special thanks to 9:30 Club and the 8x10 for not restricting scraping in their ToS or ceasing my operations during development and testing.',
     'Special thanks to Wunderground for providing their API for free, with limitations.'
+];
+
+export const OTHER_PROJECTS_GITHUB = [
+    'https://github.com/alexscasa/concerts',
+    '',
+    'https://github.com/alexscasa/portfolio'
 ];

@@ -29,7 +29,6 @@ class Navigation extends Component {
     }
     
     // When user navigates forward or backward in browser history
-    // treat it as clicking a link and make that the active page
     manageHistory(e) {
         let path = document.location.pathname.substr(1);
         
@@ -54,6 +53,9 @@ class Navigation extends Component {
     }
     
     // Determine is user is navigating forward or backward
+    // - if path equals the previous page in state [not including current page]
+    //   then remove the last element in pages and reload Content
+    // - else assume moving forward and load new page into Content
     navDirection(path) {
         if(this.props.pages.length > 2) {
             if(path === this.props.pages[this.props.pages.length - 2]) {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf';
+import { Button } from 'react-bootstrap';
 
 import './Resume.css';
 
@@ -25,6 +26,9 @@ class Resume extends Component {
           <Page pageNumber={pageNumber} />
         </Document>
         <p>Page {pageNumber} of {numPages ? numPages : '...'}</p>
+        <Button href='assets/Resume_AlexHouse.pdf' target="_blank" rel="noopener noreferrer">
+          Open in New Tab
+        </Button>
       </div>
     );
   }

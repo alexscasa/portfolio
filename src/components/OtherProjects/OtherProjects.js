@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import { Panel } from 'react-bootstrap';
+import { Panel, Button } from 'react-bootstrap';
 
-import { OTHER_PROJECTS, OTHER_NOTES, OTHER_THANKS } from '../constants/index';
+import { OTHER_PROJECTS, OTHER_NOTES, OTHER_THANKS, OTHER_PROJECTS_GITHUB } from '../constants/index';
 
 import './OtherProjects.css';
 
@@ -24,6 +24,11 @@ class OtherProjects extends Component {
                                     <Panel.Body>
                                         <p>{OTHER_NOTES[i]}</p>
                                         <p>{OTHER_THANKS[i]}</p>
+                                        {
+                                            <Button href={ OTHER_PROJECTS_GITHUB[i] } target="_blank" rel="noopener noreferrer">
+                                                { OTHER_PROJECTS_GITHUB[i] === '' ? 'Not on Github' : 'GitHub' }
+                                            </Button>
+                                        }
                                     </Panel.Body>
                                 </Panel.Collapse>
                             </Panel>
