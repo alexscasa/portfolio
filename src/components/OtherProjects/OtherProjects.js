@@ -7,12 +7,26 @@ import { OTHER_PROJECTS, OTHER_NOTES, OTHER_THANKS, OTHER_PROJECTS_GITHUB } from
 import './OtherProjects.css';
 
 class OtherProjects extends Component {
+    
+    githubButton(link) {
+            if (link !== '') {
+                return(   
+                    <Button href={ link } target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </Button>
+                );
+            }
+    }
+    
     render() {
         return(
             <div id="others">
             {
                 OTHER_PROJECTS
                     .map((project, i) => {
+                        
+                        let githubButton = this.githubButton(OTHER_PROJECTS_GITHUB[i]);
+                    
                         return(
                             <Panel id={project} key={project} defaultExpanded>
                                 <Panel.Heading>
@@ -24,11 +38,7 @@ class OtherProjects extends Component {
                                     <Panel.Body>
                                         <p>{OTHER_NOTES[i]}</p>
                                         <p>{OTHER_THANKS[i]}</p>
-                                        {
-                                            <Button href={ OTHER_PROJECTS_GITHUB[i] } target="_blank" rel="noopener noreferrer">
-                                                { OTHER_PROJECTS_GITHUB[i] === '' ? 'Not on Github' : 'GitHub' }
-                                            </Button>
-                                        }
+                                        { githubButton }
                                     </Panel.Body>
                                 </Panel.Collapse>
                             </Panel>
