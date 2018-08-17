@@ -1,0 +1,17 @@
+/*.category {*/
+/*    display: inline-block;*/
+/*}*/
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+    text-align: center;
+}
