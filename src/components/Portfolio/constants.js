@@ -28,7 +28,8 @@ export const NOTES = {
 
 export const THANKS = {
     ConcertViewer: [
-        '9:30 Club and the 8x10 for not restricting scraping in their ToS or ceasing my operations during development and testing.',
+        '9:30 Club,http://930.com',
+        'The 8x10,http://the8x10.com'
   
     ],
     PirateGame: [
