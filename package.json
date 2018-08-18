@@ -4,12 +4,12 @@
   "homepage": "http://www.alexhouse.tech",
   "private": true,
   "dependencies": {
-    "react": "^16.4.0",
-    "react-bootstrap": "^0.32.1",
-    "react-dom": "^16.4.1",
-    "react-iframe": "^1.2.0",
-    "react-pdf": "^3.0.5",
-    "react-router-dom": "^4.3.1",
+    "react": "16.4.0",
+    "react-bootstrap": "0.32.1",
+    "react-dom": "16.4.1",
+    "react-iframe": "1.2.0",
+    "react-pdf": "3.0.5",
+    "react-router-dom": "4.3.1",
     "react-scripts": "1.1.4"
   },
   "scripts": {
